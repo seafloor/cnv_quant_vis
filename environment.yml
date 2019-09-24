@@ -1,0 +1,9 @@
+name: cnv_app_env
+channels:
+dependencies:
+   - pandas
+   - bokeh
+   - numpy
+   - scipy
+   - statsmodels
+   - pyarrow
