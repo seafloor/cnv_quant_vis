@@ -8,6 +8,7 @@ from bokeh.transform import factor_cmap
 from bokeh.io import curdoc, show
 import pandas as pd
 import numpy as np
+import os
 from plotting import get_kde, get_rug, make_plot, make_rug
 from plotting import get_data
 
@@ -46,7 +47,7 @@ def reset_data():
     scale_time_radio.active = 1
 
 
-file_name = 'data/biobank2.parquet'
+file_name = os.path.join('data', 'biobank2.parquet')
 cnv_name = 'TAR deletion'
 test_name = 'HDL cholesterol'
 data, raw_data, x_min, x_max = get_data(file_name, cnv_name, test_name, 0, [],
