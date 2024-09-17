@@ -47,7 +47,7 @@ def get_rug(cnv, test, data):
 
 def make_plot(cnv_name, test_name, data, d_min, d_max):
     plot = figure(
-        title=test_name, plot_width=700, plot_height=500,
+        title=test_name, width=700, height=500,
         min_border=0)
 
     glyph1 = VArea(x="x1", y1="y01", y2="y1", fill_color="LightCoral",
@@ -67,7 +67,7 @@ def make_plot(cnv_name, test_name, data, d_min, d_max):
 
 
 def make_rug(raw_data, cnv, test):
-    rug = figure(plot_width=700, plot_height=110,
+    rug = figure(width=700, height=110,
                  min_border=0)
     rug.toolbar_location = None
     rug.yaxis[0].ticker.desired_num_ticks = 2

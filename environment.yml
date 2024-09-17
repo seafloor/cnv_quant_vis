@@ -1,8 +1,9 @@
 name: cnv_app_env
 channels:
+   - defaults
 dependencies:
    - pandas
-   - bokeh
+   - bokeh=2.4.3
    - numpy
    - scipy
    - statsmodels
