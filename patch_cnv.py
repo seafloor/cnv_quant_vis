@@ -136,14 +136,14 @@ reset_button.on_click(reset_data)
 # Section titles, dividers, button subtitles
 # Possible overall header
 labname = Div(text="<b>CARDIFF UNIVERSITY</b>", width=800, height=20,
-              style={'color': '#6a6a6a'})
+              styles={'color': '#6a6a6a'})
 header = Div(text="""
              <b>Visualiser for the Effects of CNVs on Quantitative Traits</b>
              """, width=800, height=30,
-             style={'color': '#373737', 'font-size': '200%'})
+             styles={'color': '#373737', 'font-size': '200%'})
 authors = Div(text="""
               <i>Authors List</i>
-              """, width=700, height=5, style={'color': '#373737',
+              """, width=700, height=5, styles={'color': '#373737',
                                                  'font-size': '90%'})
 subheader = Div(text="""
                 <p>
@@ -157,18 +157,18 @@ subheader = Div(text="""
                 Owen et al.</a> on anthropometric traits.
                 </p>
                 """,
-                width=700, height=80, style={'color': '#373737'})
+                width=700, height=80, styles={'color': '#373737'})
 sex_header = Div(text="Sex", width=100, height=10)
 outlier_header = Div(text="Outlier removal", width=250, height=10)
 scale_radio_header = Div(text="Clean/scale before or after transformation?",
                          width=300, height=10)
 section_subset = Div(text="<b>Subset Selection</b><hr>", width=150, height=40,
-                     style={'color': '#373737', 'font-size': '110%'})
+                     styles={'color': '#373737', 'font-size': '110%'})
 section_rescale = Div(text="<b>Cleaning and Rescaling</b><hr>", width=250,
                       height=40,
-                      style={'color': '#373737', 'font-size': '110%'})
+                      styles={'color': '#373737', 'font-size': '110%'})
 section_transform = Div(text="<b>Transformations</b><hr>", width=100, height=40,
-                        style={'color': '#373737', 'font-size': '110%'})
+                        styles={'color': '#373737', 'font-size': '110%'})
 log_note = Div(text="""
                *med/mad is a robust outlier identification rule, outlined
                <a href="https://stats.stackexchange.com/a/121075">here</a>. In
@@ -178,7 +178,7 @@ log_note = Div(text="""
                n is abs(min(x))+1<br>
                ***the square-root is also taken as sqrt(n + x) where n is
                abs(min(x)) when any(x < 0), zeroing-out negatives""",
-               width=700, height=10, style={'color': '#373737', 'font-size':
+               width=700, height=10, styles={'color': '#373737', 'font-size':
                                             '80%'})
 
 
